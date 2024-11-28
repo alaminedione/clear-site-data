@@ -10,6 +10,7 @@
     <h1>Gérer les Sites</h1>
     <input type="text" id="siteInput" placeholder="Entrez l'URL d'un site" />
     <button id="addSiteButton">Ajouter un site</button>
+    <button id="addMultipleSitesButton">Ajouter plusieurs sites</button>
 
     <br />
     <br />
@@ -18,7 +19,11 @@
     <h2>Liste des Sites</h2>
     <ul id="siteList"></ul>
 
-    <!-- <a href="popup.html">Accueil</a> -->
+    <div id="actions">
+      <button id="selectAllButton">Tout sélectionner</button>
+      <button id="deselectAllButton">Tout désélectionner</button>
+      <button id="deleteSelectedButton">Supprimer les sélectionnés</button>
+    </div>
 
     <script src="manage_sites.js"></script>
   </body>
