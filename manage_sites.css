@@ -1,0 +1,81 @@
+/* reset des marges et des paddings par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 20px 0;
+  padding-left: 0;
+}
+
+li {
+  background-color: #fff;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+input,
+button {
+  font-size: 1rem;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"] {
+  width: calc(100% - 22px); /* ajuste la largeur du champ texte */
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Ajouter des marges pour le texte et les éléments */
+br {
+  margin-bottom: 10px;
+}
+
+/* Style pour le lien */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
