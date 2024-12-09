@@ -7,22 +7,36 @@
     <title>Gérer les Sites</title>
   </head>
   <body>
-    <h1>Gérer les Sites</h1>
-    <input type="text" id="siteInput" placeholder="Entrez l'URL d'un site" />
-    <button id="addSiteButton">Ajouter un site</button>
-    <button id="addMultipleSitesButton">Ajouter plusieurs sites</button>
+    <div class="container">
+      <h1>Gérer les Sites</h1>
 
-    <br />
-    <br />
+      <div class="form-container">
+        <input
+          type="text"
+          id="siteInput"
+          placeholder="Entrez l'URL d'un site"
+        />
+        <div class="button-group">
+          <button id="addSiteButton">Ajouter un site</button>
+          <button id="addMultipleSitesButton">Ajouter plusieurs sites</button>
+        </div>
+        <p class="info-text">
+          Pour ajouter plusieurs sites, séparez les URLs par des virgules.
+          Exemple :<br />
+          https://www.google.com, https://www.github.com
+        </p>
+      </div>
 
-    <hr />
-    <h2>Liste des Sites</h2>
-    <ul id="siteList"></ul>
+      <hr />
 
-    <div id="actions">
-      <button id="selectAllButton">Tout sélectionner</button>
-      <button id="deselectAllButton">Tout désélectionner</button>
-      <button id="deleteSelectedButton">Supprimer les sélectionnés</button>
+      <h2>Liste des Sites</h2>
+      <div id="actions">
+        <button id="selectAllButton">Tout sélectionner</button>
+        <button id="deselectAllButton">Tout désélectionner</button>
+        <button id="deleteSelectedButton">Supprimer les sélectionnés</button>
+      </div>
+
+      <ul id="siteList" class="site-list"></ul>
     </div>
 
     <script src="manage_sites.js"></script>

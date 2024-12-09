@@ -1,4 +1,3 @@
-/* reset des marges et des paddings par défaut */
 * {
   margin: 0;
   padding: 0;
@@ -6,84 +5,152 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: "Arial", sans-serif;
+  background-color: #f7f7f7;
   color: #333;
   line-height: 1.6;
-  padding: 20px;
+  padding: 30px 10%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 h1,
 h2 {
   color: #444;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 h1 {
   font-size: 2.5rem;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 20px 0;
-  padding-left: 0;
-}
-
-li {
+.form-container {
   background-color: #fff;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 4px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
-
-input,
-button {
-  font-size: 1rem;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
 input[type="text"] {
-  width: calc(100% - 22px); /* ajuste la largeur du champ texte */
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
 }
 
 button {
   background-color: #4caf50;
   color: white;
-  cursor: pointer;
+  padding: 10px 20px;
   border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #45a049;
 }
 
-/* Ajouter des marges pour le texte et les éléments */
-br {
-  margin-bottom: 10px;
+button:disabled {
+  background-color: #ccc;
 }
 
-/* Style pour le lien */
-a {
-  color: #007bff;
-  text-decoration: none;
+.info-text {
+  font-size: 0.9rem;
+  color: #777;
+  text-align: center;
+  margin-top: 10px;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-#actions {
+ul.site-list {
+  list-style-type: none;
   margin-top: 20px;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+li button {
+  background-color: #f44336;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #d32f2f;
+}
+
+/* Boutons d'actions en haut */
+#actions {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #actions button {
-  margin-right: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#actions button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button {
+    margin-bottom: 10px;
+  }
 }
